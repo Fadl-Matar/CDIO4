@@ -24,7 +24,7 @@ public class Controller {
         this.noOfPlayers = noOfPlayers;
     }
 
-    public void setupAndStart() throws InterruptedException {
+    public void setupAndStart(){
         //int noOfPlayers = gui.getUserInteger("Hvor mange spillere?", 2, 4);
 
         if (noOfPlayers == 2) {
