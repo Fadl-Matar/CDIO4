@@ -103,19 +103,13 @@ public class Main {
 
         int noOfPlayers = gui.getUserInteger("Hvor mange spillere?", 2, 4);
         Player[] players = new Player[noOfPlayers];
-        if (noOfPlayers == 2) {
-            Player player1 = new Player(gui.getUserString("Spiller 1 hedder:"), new Account(), new Piece("Bil"));
-            Player player2 = new Player(gui.getUserString("Spiller 2 hedder:"), new Account(), new Piece("Bil"));
-            players[0] = player1;
-            players[1] = player2;
-        } else if (noOfPlayers == 3) {
+        if (noOfPlayers == 3) {
             Player player1 = new Player(gui.getUserString("Spiller 1 hedder:"), new Account(), new Piece("Bil"));
             Player player2 = new Player(gui.getUserString("Spiller 2 hedder:"), new Account(), new Piece("Bil"));
             Player player3 = new Player(gui.getUserString("Spiller 3 hedder:"), new Account(), new Piece("Bil"));
             players[0] = player1;
             players[1] = player2;
             players[2] = player3;
-
         } else if (noOfPlayers == 4) {
             Player player1 = new Player(gui.getUserString("Spiller 1 hedder:"), new Account(), new Piece("Bil"));
             Player player2 = new Player(gui.getUserString("Spiller 2 hedder:"), new Account(), new Piece("Bil"));
@@ -125,6 +119,32 @@ public class Main {
             players[1] = player2;
             players[2] = player3;
             players[3] = player4;
+
+        } else if (noOfPlayers == 5) {
+            Player player1 = new Player(gui.getUserString("Spiller 1 hedder:"), new Account(), new Piece("Bil"));
+            Player player2 = new Player(gui.getUserString("Spiller 2 hedder:"), new Account(), new Piece("Bil"));
+            Player player3 = new Player(gui.getUserString("Spiller 3 hedder:"), new Account(), new Piece("Bil"));
+            Player player4 = new Player(gui.getUserString("Spiller 4 hedder:"), new Account(), new Piece("Bil"));
+            Player player5 = new Player(gui.getUserString("Spiller 5 hedder:"), new Account(), new Piece("Bil"));
+            players[0] = player1;
+            players[1] = player2;
+            players[2] = player3;
+            players[3] = player4;
+            players[4] = player5;
+
+        } else if (noOfPlayers == 6) {
+            Player player1 = new Player(gui.getUserString("Spiller 1 hedder:"), new Account(), new Piece("Bil"));
+            Player player2 = new Player(gui.getUserString("Spiller 2 hedder:"), new Account(), new Piece("Bil"));
+            Player player3 = new Player(gui.getUserString("Spiller 3 hedder:"), new Account(), new Piece("Bil"));
+            Player player4 = new Player(gui.getUserString("Spiller 4 hedder:"), new Account(), new Piece("Bil"));
+            Player player5 = new Player(gui.getUserString("Spiller 5 hedder:"), new Account(), new Piece("Bil"));
+            Player player6 = new Player(gui.getUserString("Spiller 6 hedder:"), new Account(), new Piece("Bil"));
+            players[0] = player1;
+            players[1] = player2;
+            players[2] = player3;
+            players[3] = player4;
+            players[4] = player5;
+            players[5] = player6;
 
         }
         //Player player1 = new Player("Anton", new Account(), new Piece("Bil"));
